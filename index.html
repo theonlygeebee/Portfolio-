@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>geebee</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">geebee</div>
+
+  <ul class="nav-links">
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#certifications">Skills</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#blog">Journal</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  <a href="#contact" class="nav-cta">Hire Me</a>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#projects"       onclick="closeMobile()">Work</a>
+  <a href="#resume"         onclick="closeMobile()">Resume</a>
+  <a href="#certifications" onclick="closeMobile()">Skills</a>
+  <a href="#testimonials"   onclick="closeMobile()">Reviews</a>
+  <a href="#blog"           onclick="closeMobile()">Journal</a>
+  <a href="#contact"        onclick="closeMobile()">Contact</a>
+  <div class="mobile-theme-row">
+    <span>Theme</span>
+    <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">🌙</button>
+  </div>
+</div>
+
+
+<section id="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow reveal">ABOUT</div>
+
+    <h1 class="hero-name reveal reveal-delay-1">
+      <em>Hey there!</em><br>Bamidele-Ilo<br>Gbolahan
+    </h1>
+
+    <p class="hero-title reveal reveal-delay-2">A Backend, Mobile Developer & UI/UX Designer</p>
+
+    <p class="hero-bio reveal reveal-delay-3">
+      I build functional digital experiences, sleek & robust Web Applications, Mobile Apps and beautiful UI/UX Designs. Currently building RaffleDotFun the future of decentralised gaming.
+    </p>
+
+    <div class="hero-actions reveal reveal-delay-4">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact"  class="btn-outline">Let's Talk</a>
+      <a href="resume.pdf" download class="btn-resume">
+        <svg viewBox="0 0 24 24"><path d="M12 16l-5-5 1.41-1.41L11 13.17V4h2v9.17l2.59-2.58L17 11l-5 5zm-7 2h14v2H5v-2z"/></svg>
+        Resume
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap reveal reveal-delay-2">
+    <div class="hero-avatar">
+      <img class="hero-photo" src="Portrait.jpg" alt="GEEBEE">
+
+      <div class="hero-badge">
+        <div class="hero-badge-num">5+</div>
+        <div class="hero-badge-label">Years Building</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <div id="stats">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Projects Shipped</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num">9</div>
+      <div class="stat-label">Tokens Supported</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Client Satisfaction</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num">F1</div>
+      <div class="stat-label">Records Label</div>
+    </div>
+  </div>
+</div> -->
+
+<section id="resume">
+  <div class="resume-inner">
+    <div class="resume-text">
+      <div class="section-label reveal">My Resume</div>
+      <h2 class="reveal reveal-delay-1">Experience, skills &amp; achievements</h2>
+      <p class="reveal reveal-delay-2">
+        Download my full CV or view it in your browser. It covers my technical
+        background, projects, certifications, and work history updated for 2026.
+      </p>
+    </div>
+    <div class="resume-actions reveal reveal-delay-3">
+      <a href="resume.pdf" download class="btn-download">
+        <svg viewBox="0 0 24 24"><path d="M12 16l-5-5 1.41-1.41L11 13.17V4h2v9.17l2.59-2.58L17 11l-5 5zm-7 2h14v2H5v-2z"/></svg>
+        Download CV
+      </a>
+      <a href="resume.pdf" target="_blank" rel="noopener" class="btn-view-resume">
+        View in Browser →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-label reveal">Projects</div>
+  <h2 class="section-title reveal reveal-delay-1">Projects that ship and scale</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-num">01</div>
+      <!-- <div class="project-icon">🎲</div> -->
+      <h3 class="project-name">RaffleDotFun</h3>
+      <p class="project-desc">Web3 raffle and gambling platform with multi-token support, user-created pools, manual admin approval flows, and a full security audit trail.</p>
+      <div class="project-tags">
+        <span class="tag">C# .NET 8</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">Web3</span>
+        <span class="tag">SQL Server</span>
+      </div>
+      <a href="#" class="project-link">
+        View Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">02</div>
+      <!-- <div class="project-icon">🎵</div> -->
+      <h3 class="project-name">Library Management System</h3>
+      <p class="project-desc">Fullstack library resource planning featuring automated check-in/out logic, management and real time inventory tracking powere by an optimized SQL Server relational database</p>
+      <div class="project-tags">
+        <span class="tag">ASP.NET CORE 8</span>
+        <span class="tag">sql server</span>
+        <span class="tag">EF core</span>
+        <span class="tag">mvc</span>
+      </div>
+      <a href="#" class="project-link">
+        View Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-num">03</div>
+      <!-- <div class="project-icon">🔐</div> -->
+      <h3 class="project-name">UI/UX</h3>
+      <p class="project-desc">High fidelity mobile and web prototypes focused on clean visual heirachy, scalable designs and intuitive usr journey from wireframe to final hand off</p>
+      <div class="project-tags">
+        <span class="tag">FIGMA</span>
+        <span class="tag">ui/ux</span>
+        <span class="tag">prototyping</span>
+        <span class="tag">responsive design</span>
+      </div>
+      <a href="#" class="project-link">
+        View Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">04</div>
+      <!-- <div class="project-icon">💼</div> -->
+      <h3 class="project-name">Building</h3>
+      <p class="project-desc">Coming soon...</p>
+      <div class="project-tags">
+        <span class="tag">HTML/CSS/JS</span>
+        <span class="tag">Animation</span>
+        <span class="tag">Design</span>
+      </div>
+      <a href="#" class="project-link">
+        View Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">05</div>
+      <!-- <div class="project-icon">⛓️</div> -->
+      <h3 class="project-name">Building</h3>
+      <p class="project-desc">Coming soon...</p>
+      <div class="project-tags">
+        <span class="tag">Blockchain</span>
+        <span class="tag">Privy Auth</span>
+        <span class="tag">REST API</span>
+      </div>
+      <a href="#" class="project-link">
+        View Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-num">06</div>
+      <!-- <div class="project-icon">🏆</div> -->
+      <h3 class="project-name">Building</h3>
+      <p class="project-desc">CComing soon...</p>
+      <div class="project-tags">
+        <span class="tag">C# Logic</span>
+        <span class="tag">Random Seeds</span>
+        <span class="tag">Audit Trail</span>
+      </div>
+      <a href="#" class="project-link">
+        View Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="certifications">
+  <div class="section-label reveal">Certifications & Skills</div>
+  <h2 class="section-title reveal reveal-delay-1">Certified, self taught, <em>always learning</em></h2>
+
+  <div class="certs-layout">
+
+    <div class="cert-list">
+      <div class="cert-item reveal">
+        <!-- <div class="cert-badge-icon">🎓</div> -->
+        <div class="cert-info">
+          <div class="cert-name">ASP.NET Core Development</div>
+          <div class="cert-issuer">Powersoft Integrated Solutions</div>
+        </div>
+        <div class="cert-year">2023</div>
+      </div>
+      <div class="cert-item reveal reveal-delay-1">
+        <!-- <div class="cert-badge-icon">⚛️</div> -->
+        <div class="cert-info">
+          <div class="cert-name">Python</div>
+          <div class="cert-issuer">NIIT</div>
+        </div>
+        <div class="cert-year">2022</div>
+      </div> 
+      <div class="cert-item reveal reveal-delay-2">
+        <!-- <div class="cert-badge-icon">🔗</div> -->
+        <div class="cert-info">
+          <div class="cert-name">Web3 & Blockchain Fundamentals</div>
+          <div class="cert-issuer">Udemy</div>
+        </div>
+        <div class="cert-year">2023</div>
+      </div>
+      <div class="cert-item reveal reveal-delay-3">
+        <!-- <div class="cert-badge-icon">🗄️</div> -->
+        <div class="cert-info">
+          <div class="cert-name">SQL Server & Entity Framework Core</div>
+          <div class="cert-issuer">NIIT / Powersoft Integrated Solutions</div>
+        </div>
+        <div class="cert-year">2022 / 2023</div>
+      </div>
+      <div class="cert-item reveal-delay-4">
+        <!-- <div class="cert-badge-icon">🎨</div> -->
+        <div class="cert-info">
+          <div class="cert-name">UI/UX Design Essentials</div>
+          <div class="cert-issuer">freeCodeCamp</div>
+        </div>
+        <div class="cert-year">2024</div>
+      </div>
+      <div class="cert-item reveal-delay">
+        <!-- <div class="cert-badge-icon">🎨</div> -->
+        <div class="cert-info">
+          <div class="cert-name">B.Eng Computer Engineering</div>
+          <div class="cert-issuer">Olabisi Onabanjo University</div>
+        </div>
+        <div class="cert-year">2019-2024</div>
+      </div>
+    </div>
+
+    <div class="skills-panel reveal reveal-delay-2">
+      <p class="skills-panel-title">Technical Proficiency</p>
+
+      <div class="skill-row">
+        <div class="skill-meta">
+          <span class="skill-name">C# / ASP.NET Core</span>
+          <span class="skill-pct">88%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-meta">
+          <span class="skill-name">Dart / Flutter</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-meta">
+          <span class="skill-name">SQL Server / EF Core</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-meta">
+          <span class="skill-name">Web3 / Blockchain</span>
+          <span class="skill-pct">72%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-meta">
+          <span class="skill-name">UI/UX & Design</span>
+          <span class="skill-pct">78%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-meta">
+          <span class="skill-name">Python</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="testimonials">
+  <div class="section-label reveal">What People Say</div>
+  <h2 class="section-title reveal reveal-delay-1">Kind words from <em>collaborators</em></h2>
+
+  <div class="testimonials-track" id="slider">
+
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">Working with GEEBEE was genuinely refreshing. He understood the brief quickly and shipped a clean, well-documented backend that our team could easily maintain.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">AM</div>
+        <div>
+          <div class="author-name">Alex M.</div>
+          <div class="author-role">Startup Founder · Lagos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-delay-1">
+      <p class="testimonial-text">He built our landing page from scratch in two days and the attention to design detail was incredible. It didn't look like a template — it looked like us.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">TK</div>
+        <div>
+          <div class="author-name">Temi K.</div>
+          <div class="author-role">Creative Director · Abuja</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-delay-2">
+      <p class="testimonial-text">The Web3 integration was seamless. GEEBEE handled the wallet auth, token flows, and admin panel all in one sprint. Very few developers have that full-stack range.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JO</div>
+        <div>
+          <div class="author-name">James O.</div>
+          <div class="author-role">Tech Lead · Remote</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-delay-3">
+      <p class="testimonial-text">Beyond the code, he communicates clearly, hits his deadlines, and takes feedback gracefully. That combination is rare and genuinely valuable on any team.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">SK</div>
+        <div>
+          <div class="author-name">Sarah K.</div>
+          <div class="author-role">Product Manager · London</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-controls">
+    <button class="slider-btn" id="prevBtn">←</button>
+    <button class="slider-btn" id="nextBtn">→</button>
+  </div>
+</section>
+
+
+<section id="blog">
+  <div class="section-label reveal">Journal</div>
+  <h2 class="section-title reveal reveal-delay-1">Thoughts on building, <em>creating & shipping</em></h2>
+
+  <div class="blog-grid">
+
+    <div class="blog-card featured reveal">
+      <div class="blog-date">April 2025</div>
+      <h3 class="blog-title">Building RaffleDotFun: Architecture decisions, Web3 pitfalls, and what I'd do differently</h3>
+      <p class="blog-excerpt">A deep-dive into designing a multi-token raffle platform from scratch — covering the backend security model, manual approval flow reasoning, and how we structured the draw engine for fairness.</p>
+      <span class="blog-read">Read More →</span>
+    </div>
+
+    <div class="blog-card reveal reveal-delay-1">
+      <div class="blog-date">March 2025</div>
+      <h3 class="blog-title">Why I chose ASP.NET Core over Node for my Web3 backend</h3>
+      <p class="blog-excerpt">Strong typing, EF Core migrations, and the Microsoft ecosystem made this a clear choice.</p>
+      <span class="blog-read">Read More →</span>
+    </div>
+
+    <div class="blog-card reveal reveal-delay-2">
+      <div class="blog-date">Feb 2025</div>
+      <h3 class="blog-title">Design systems for solo developers</h3>
+      <p class="blog-excerpt">How I approach cohesive UI without a designer — CSS variables, Tailwind config, and constraint-based thinking.</p>
+      <span class="blog-read">Read More →</span>
+    </div>
+
+    <div class="blog-card reveal reveal-delay-1">
+      <div class="blog-date">Jan 2025</div>
+      <h3 class="blog-title">TBD</h3>
+      <p class="blog-excerpt">Coming soon.</p>
+      <span class="blog-read">Read More →</span>
+    </div>
+
+    <div class="blog-card reveal reveal-delay-2">
+      <div class="blog-date">Dec 2024</div>
+      <h3 class="blog-title">The beginner's guide to Privy wallet auth</h3>
+      <p class="blog-excerpt">How I integrated Privy into a Next.js + ASP.NET stack for seamless Web3 authentication.</p>
+      <span class="blog-read">Read More →</span>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="contact-inner">
+
+    <div class="contact-left">
+      <div class="section-label reveal">Get in Touch</div>
+      <h2 class="section-title reveal reveal-delay-1">Let's build something great together</h2>
+      <p class="contact-desc reveal reveal-delay-2">
+        Open to freelance projects, collaborations, and full-time opportunities.
+        If you have an idea or problem to solve, I'm all ears.
+      </p>
+
+      <div class="contact-channels reveal reveal-delay-3">
+        <div class="contact-channel">
+          <!-- <div class="channel-icon">✉️</div> -->
+          <div>
+            <div class="channel-label">Email</div>
+            <div class="channel-value">gbolahanexcellent@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-channel">
+          <!-- <div class="channel-icon">📍</div> -->
+          <div>
+            <div class="channel-label">Location</div>
+            <div class="channel-value">Lagos, Nigeria · Remote friendly</div>
+          </div>
+        </div>
+        <div class="contact-channel">
+          <!-- <div class="channel-icon">⚡</div> -->
+          <div>
+            <div class="channel-label">Response Time</div>
+            <div class="channel-value">Within 24 hours</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-bar reveal">
+        <a href="https://instagram.com/theonlygeebee" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://x.com/theonlygeebee" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.629zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Twitter / X
+        </a>
+        <a href="https://github.com/theonlygeebee" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/theonlygeebee" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+  <div class="form-group">
+    <label class="form-label">Your Name</label>
+    <input class="form-input" type="text" name="name" placeholder="John Doe" required>
+  </div>
+  <div class="form-group">
+    <label class="form-label">Email Address</label>
+    <input class="form-input" type="email" name="email" placeholder="johndoe@example.com" required>
+  </div>
+  <div class="form-group">
+    <label class="form-label">Subject</label>
+    <input class="form-input" type="text" name="subject" placeholder="Project enquiry, collaboration...">
+  </div>
+  <div class="form-group">
+    <label class="form-label">Message</label>
+    <textarea class="form-textarea" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+  </div>
+  <button type="submit" class="form-submit">Send Message</button>
+</form>
+
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-logo">made with love by geebee ❤️</div>
+  <div class="footer-copy">© 2026 GEEBEE. All rights reserved.</div>
+</footer>
+
+
+<!-- JavaScript -->
+<script src="main.js"></script>
+</body>
+</html>
